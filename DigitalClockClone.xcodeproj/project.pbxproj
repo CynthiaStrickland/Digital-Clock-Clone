@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		3DC42E961C2F936900037970 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC42E951C2F936900037970 /* AppDelegate.swift */; };
-		3DC42E981C2F936900037970 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC42E971C2F936900037970 /* ViewController.swift */; };
 		3DC42E9B1C2F936900037970 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC42E991C2F936900037970 /* Main.storyboard */; };
 		3DC42E9D1C2F936900037970 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DC42E9C1C2F936900037970 /* Assets.xcassets */; };
 		3DC42EA01C2F936900037970 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC42E9E1C2F936900037970 /* LaunchScreen.storyboard */; };
 		3DC42EAB1C2F936900037970 /* DigitalClockCloneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC42EAA1C2F936900037970 /* DigitalClockCloneTests.swift */; };
 		3DC42EB61C2F936900037970 /* DigitalClockCloneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC42EB51C2F936900037970 /* DigitalClockCloneUITests.swift */; };
+		3DC42EC41C2F93CC00037970 /* ClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC42EC31C2F93CC00037970 /* ClockViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		3DC42E921C2F936900037970 /* DigitalClockClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigitalClockClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC42E951C2F936900037970 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3DC42E971C2F936900037970 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3DC42E9A1C2F936900037970 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3DC42E9C1C2F936900037970 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DC42E9F1C2F936900037970 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		3DC42EB11C2F936900037970 /* DigitalClockCloneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigitalClockCloneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC42EB51C2F936900037970 /* DigitalClockCloneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DigitalClockCloneUITests.swift; sourceTree = "<group>"; };
 		3DC42EB71C2F936900037970 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DC42EC31C2F93CC00037970 /* ClockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				3DC42E951C2F936900037970 /* AppDelegate.swift */,
-				3DC42E971C2F936900037970 /* ViewController.swift */,
+				3DC42EC31C2F93CC00037970 /* ClockViewController.swift */,
 				3DC42E991C2F936900037970 /* Main.storyboard */,
 				3DC42E9C1C2F936900037970 /* Assets.xcassets */,
 				3DC42E9E1C2F936900037970 /* LaunchScreen.storyboard */,
@@ -256,7 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DC42E981C2F936900037970 /* ViewController.swift in Sources */,
+				3DC42EC41C2F93CC00037970 /* ClockViewController.swift in Sources */,
 				3DC42E961C2F936900037970 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
