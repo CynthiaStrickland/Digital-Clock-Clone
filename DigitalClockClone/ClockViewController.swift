@@ -32,6 +32,9 @@ class ClockViewController: UIViewController {
     let seconds = components.second! > 9 ? "\(components.second)" : "0\(components.second)"
     let am = components.hour! > 12 ? "AM" : "PM"
     
-    myTimeLabel.text = "\(hourString):\(minutes):\(seconds) \(am)"
+    if myTimeLabel!.text != nil {
+        myTimeLabel.text = "\(hourString):\(minutes):\(seconds) \(am)"
+
+    }
   }
 }
