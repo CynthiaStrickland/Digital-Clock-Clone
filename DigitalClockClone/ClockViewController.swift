@@ -9,7 +9,7 @@
 import UIKit
 
 class ClockViewController: UIViewController {
-
+    
   @IBOutlet weak var myTimeLabel: UILabel!
   
     override func viewDidLoad() {
@@ -20,21 +20,21 @@ class ClockViewController: UIViewController {
     }
 
   func updateClock() {
-    
+
     let date = Date()
     let calendar = Calendar.current
     let components = (calendar as NSCalendar).components([.hour, .minute, .second], from: date)
     
     var hour = components.hour! > 12 ? components.hour! - 12 : components.hour
     hour = hour == 0 ? 12 : hour
-    let hourString = hour! > 9 ? "\(hour)" : "0\(hour)"
-    let minutes = components.minute! > 9 ? "\(components.minute)" : "0\(components.minute)"
-    let seconds = components.second! > 9 ? "\(components.second)" : "0\(components.second)"
+
+    let hourString = hour! > 9 ? "\(hour!)" : "0\(hour!)"
+    let minutes = components.minute! > 9 ? "\(components.minute!)" : "0\(components.minute!)"
+    let seconds = components.second! > 9 ? "\(components.second!)" : "0\(components.second!)"
     let am = components.hour! > 12 ? "AM" : "PM"
     
-    if myTimeLabel!.text != nil {
-        myTimeLabel.text = "\(hourString):\(minutes):\(seconds) \(am)"
-
+    if myTimeLabel != nil {
+        myTimeLabel!.text = "\(hourString):\(minutes):\(seconds) \(am)"
     }
   }
 }
