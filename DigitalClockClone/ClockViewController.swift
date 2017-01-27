@@ -31,10 +31,10 @@ class ClockViewController: UIViewController {
     let hourString = hour! > 9 ? "\(hour!)" : "0\(hour!)"
     let minutes = components.minute! > 9 ? "\(components.minute!)" : "0\(components.minute!)"
     let seconds = components.second! > 9 ? "\(components.second!)" : "0\(components.second!)"
-    let am = components.hour! > 12 ? "AM" : "PM"
+    let ampm = components.hour! > 12 ? "PM" : "AM"
     
     if myTimeLabel != nil {
-        myTimeLabel!.text = "\(hourString):\(minutes):\(seconds) \(am)"
+        myTimeLabel!.text = "\(hourString):\(minutes):\(seconds) \(ampm)"
     }
   }
 }
